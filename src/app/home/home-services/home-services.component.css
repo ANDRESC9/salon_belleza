@@ -1,0 +1,146 @@
+.background_services {
+    width: 100%;
+    height: auto;
+    background: url(../../../assets/backgrounds/background_services.jpg);
+}
+
+.container_services {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittle {
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.tittle h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card {
+    height: 11.5rem;
+    width: 35rem;
+    background-color: #fff;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: flex-start;
+    padding: 2%;
+    position: relative;
+}
+
+.card img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.right img{
+    right: 0;
+    left: unset !important;
+}
+
+.card div {
+    height: 100%;
+    width: 100%;
+    border: .2rem solid var(--item-color);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card div span {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    position: relative;
+    left: 36%;
+}
+
+.card div p {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: flex-start;
+    font-size: .7rem;
+    line-height: 1rem;
+    color: var(--main-color);
+    position: relative;
+    left: 36%;
+}
+
+.right span,
+.right p {
+    left: 5% !important;
+}
+
+.btn {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0 0 2%;
+}
+
+@media screen and (max-width: 576px) {
+    .btn {
+        padding: 0 0 3%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tittle {
+        padding: 4% 0;
+    }
+    
+    .card {
+        height: 23rem;
+        width: 30rem;
+        padding: 6%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card div {
+        background-color: rgba(0, 0, 0, 0.445);
+    }
+
+    .card div span {
+        height: 30%;
+        position: inherit;
+        color: #fff;
+        font-size: 1.5rem;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .card div p {
+        height: 70%;
+        position: inherit;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        width: 100% !important;
+        padding: 0 5%;
+    }
+
+    .tittle h3 {
+        font-size: 1.8rem;
+    }
+}
+

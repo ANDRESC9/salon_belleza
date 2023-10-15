@@ -1,0 +1,381 @@
+*,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+tr,
+select,
+input {
+    appearance:inherit; 
+    -moz-appearance:inherit; 
+    -webkit-appearance:inherit; 
+    background:transparent; 
+    border:none; 
+    border-radius:0; 
+    box-sizing: border-box; 
+    margin:0; 
+    outline:0; 
+    padding:0; 
+    text-decoration:none;
+    list-style: none;
+    font-family: var(--main_font);
+    color: inherit;
+}
+
+:root {
+    /* Variable de tamaño de fuente */
+    font-size: 30px;
+    /* Variables de color */
+    --main-color: #0a0a0a;
+    --item-color: #d4a413;
+    --hover-color: #f3c332;
+    --white-color: white;
+    /* Variables de fuentes */
+    --main_font: 'Montserrat', sans-serif;
+    --fuente-secundaria: "Times New Roman, serif";
+}
+
+button {
+    background-color: var(--item-color);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    width: 7rem;
+    padding: 1% 0;
+    font-size: .8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Estilo banner home */
+.banner .owl-theme .owl-nav {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .owl-prev,
+.banner .owl-next {
+    width: 1.8rem;
+    height: 2.5rem;
+    background-color: #fff !important;
+    margin: 0 !important;
+    opacity: 0;
+    transition: all .3s ease;
+    color: black !important;
+    display: grid !important;
+    place-items: center !important;
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+    font-family: monospace;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.banner .owl-prev{
+    border-radius: 0 65px 65px 0 !important;
+}
+
+.banner .owl-next{
+    border-radius: 65px 0 0 65px !important;
+} 
+
+.banner:hover .owl-prev,
+.banner:hover .owl-next {
+    opacity: 1;
+}
+
+.banner .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    display: flex;
+}
+
+.banner .owl-dots .owl-dot.active span, 
+.banner .owl-dots .owl-dot:hover span {
+    background-color: var(--item-color) !important;
+}
+
+.banner .owl-theme .owl-dots .owl-dot span {
+    width: .4rem;
+    height: .4rem;
+    margin: 0 0.2rem;
+}
+
+/* Estilo portafolio home */
+.container_studio .owl-stage {
+    height: 22.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container_studio .owl-carousel .owl-item img {
+    height: 18.5rem;
+    border-top: .5rem solid var(--item-color);
+    border-bottom: .5rem solid var(--item-color);
+    cursor: grab;
+}
+
+.container_studio .active.center {
+    transform: scale(1.2);
+}
+
+.container_studio .active {
+    transition: .6s ease;
+}
+
+.container_studio .owl-theme .owl-nav {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_studio .owl-prev,
+.container_studio .owl-next {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--item-color) !important;
+    transition: all .3s ease;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    font-family: monospace;
+    font-weight: 300 !important;
+    border-radius: 50% !important;
+    position: relative;
+}
+
+.container_studio .owl-prev{
+    right: 6%;
+}
+
+.container_studio .owl-next{
+    left: 6%;
+} 
+
+.container_studio .owl-theme .owl-dots {
+    display: none;
+}
+
+@media screen and (max-width: 1800px) {
+    :root {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    :root {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    :root {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :root {
+        font-size: 15px;
+    }
+
+    .banner .owl-prev,
+    .banner .owl-next {
+        display: none !important;
+    }
+
+    .container_studio .owl-stage {
+        height: 14rem;
+    }
+    
+    .container_studio .owl-carousel .owl-item img {
+        height: 11.5rem;
+    }
+
+    .container_studio .owl-prev{
+        right: 8%;
+    }
+    
+    .container_studio .owl-next{
+        left: 8%;
+    } 
+} 
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 13px;
+    }
+
+    button {
+        width: 9rem;
+        padding: 2% 0;
+        font-size: 1.1rem;
+    }
+
+    .banner .owl-theme .owl-dots .owl-dot span {
+        width: .6rem;
+        height: .6rem;
+        margin: 0 0.3rem;
+    }
+
+    .container_studio .owl-theme .owl-nav {
+        display: none;
+    }
+
+    .container_studio {
+        padding: 0 12% !important;
+    }
+
+    .container_studio .owl-stage {
+        height: 28rem;
+    }
+    
+    .container_studio .owl-carousel .owl-item img {
+        height: 28rem;
+        border-top: .8rem solid var(--item-color);
+        border-bottom: .8rem solid var(--item-color);
+    }
+
+    .container_studio .owl-theme .owl-dots {
+        display: block;
+        margin: 5%;
+    }
+
+    .container_studio .owl-theme .owl-dots .owl-dot span {
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .container_studio .owl-dots .owl-dot.active span, 
+    .container_studio .owl-dots .owl-dot:hover span {
+        background-color: var(--item-color) !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+

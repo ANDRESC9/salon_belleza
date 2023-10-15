@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { HomeStudioComponent } from './home-studio.component';
+
+describe('HomeStudioComponent', () => {
+  let component: HomeStudioComponent;
+  let fixture: ComponentFixture<HomeStudioComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [HomeStudioComponent]
+    });
+    fixture = TestBed.createComponent(HomeStudioComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

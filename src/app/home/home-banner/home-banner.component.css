@@ -1,0 +1,40 @@
+.banner {
+    position: relative;
+    box-shadow: -1px 3px 15px 0px rgba(0, 0, 0, 0.5);
+    cursor: grab;
+}
+
+.item {
+    position: relative;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+}
+
+p {
+    position: absolute;
+    left: 5%;
+    bottom: 68%;
+    width: 30%;
+    font-size: 1rem;
+}
+
+button {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+@media screen and (max-width: 576px) {
+    button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    p {
+        bottom: 36%;
+        font-size: .8rem;
+    }
+}

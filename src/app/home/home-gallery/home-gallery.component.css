@@ -1,0 +1,25 @@
+.container_studio {
+    padding: 0 7% 3%;
+}
+
+.tittle {
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.tittle h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 500px) {
+    .tittle {
+        padding: 3% 0;
+    }
+
+    .tittle h3 {
+        font-size: 1.8rem;
+    }
+}
