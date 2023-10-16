@@ -89,73 +89,7 @@ nav {
     cursor: pointer;
 }
 
-.menu_toggle {
-    display: none;
-}
-
-.menu_toggle img {
-    width: 3rem;
-    height: 3rem;
-}
-
 @media screen and (max-width: 990px) {
-    .menu_toggle {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%); 
-        left: 1%;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 3rem;
-        height: 2rem;
-        border-radius: 10px;
-        transition: all .3s ease;
-        gap: .5rem;
-    }
-
-    .menu_toggle .line {
-        position: relative;
-        width: 2.5rem;
-        height: .3rem;
-        background-color: var(--main-color);
-        border-radius: 10px;
-    }
-
-    .menu_toggle .line:nth-child(1) {
-        top: 0;
-        transform: rotate(0);
-        transition: top .2s ease, transform .4s ease;
-    }
-
-    .menu_toggle .line:nth-child(2) {
-        opacity: 1;
-        visibility: visible;
-        transition: all .2s ease;
-    }
-
-    .menu_toggle .line:nth-child(3) {
-        top: 0;
-        transform: rotate(0);
-        transition: top .2s ease, transform .4s ease;
-    }
-
-    .menu_toggle.active .line:nth-child(1) {
-        top: .8rem;
-        transform: rotate(45deg);
-    }
-
-    .menu_toggle.active .line:nth-child(2) {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .menu_toggle.active .line:nth-child(3) {
-        top: -.8rem;
-        transform: rotate(-45deg);
-    }
     .social_networks {
         display: none;
     }
@@ -203,10 +137,6 @@ nav {
 }
 
 @media screen and (max-width: 576px){
-    .menu_toggle {
-        left: 4%;
-    }
-
     .links ul.last_ul {
         top: 13rem !important;
     }
