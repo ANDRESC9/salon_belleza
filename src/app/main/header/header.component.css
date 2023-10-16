@@ -86,6 +86,7 @@ nav {
 .logo img {
     width: auto;
     height: 100%;
+    cursor: pointer;
 }
 
 .menu_toggle {
@@ -202,6 +203,10 @@ nav {
 }
 
 @media screen and (max-width: 576px){
+    .menu_toggle {
+        left: 4%;
+    }
+
     .links ul.last_ul {
         top: 13rem !important;
     }
@@ -220,6 +225,6 @@ nav {
 
 @media screen and (max-width: 425px) {
     .links ul.last_ul {
-        top: 14.5rem !important;
+        top: 14.5rem !important;        
     }
 }
